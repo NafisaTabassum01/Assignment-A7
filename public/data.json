@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "picture": "Ayesha",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 5,
+    "status": "On-Track",
+    "tags": ["school friend", "best friend"],
+    "bio": "We studied together in college and still talk almost every week.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hossain",
+    "picture": "Tanvir",
+    "email": "tanvir.hossain@gmail.com",
+    "days_since_contact": 18,
+    "status": "Almost Due",
+    "tags": ["gym buddy", "college"],
+    "bio": "Met at the gym, became close friends through fitness journey.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "Nusrat",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 25,
+    "status": "Overdue",
+    "tags": ["university", "project partner"],
+    "bio": "We worked on several university projects together and stayed in touch.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 4,
+    "name": "Shakil Ahmed",
+    "picture": "Shakil",
+    "email": "shakil.ahmed@gmail.com",
+    "days_since_contact": 8,
+    "status": "On-Track",
+    "tags": ["childhood friend", "neighbour"],
+    "bio": "Grew up in the same neighborhood and still meet during holidays.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 5,
+    "name": "Mim Akter",
+    "picture": "Mim",
+    "email": "mim.akter@gmail.com",
+    "days_since_contact": 14,
+    "status": "Almost Due",
+    "tags": ["Travel"],
+    "bio": "We traveled Cox’s Bazar together during university days.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 6,
+    "name": "Rakib Hasan",
+    "picture": "Rakib",
+    "email": "rakib.hasan@gmail.com",
+    "days_since_contact": 30,
+    "status": "Overdue",
+    "tags": ["Family"],
+    "bio": "Worked in the same office team for 2 years, still keep in touch occasionally.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 7,
+    "name": "Farhana Islam",
+    "picture": "Farhana",
+    "email": "farhana.islam@gmail.com",
+    "days_since_contact": 3,
+    "status": "On-Track",
+    "tags": ["Friend", "school"],
+    "bio": "My closest friend from school days, talk almost daily.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 8,
+    "name": "Mehedi Hasan",
+    "picture": "Mehedi",
+    "email": "mehedi.hasan@gmail.com",
+    "days_since_contact": 11,
+    "status": "On-Track",
+    "tags": ["gaming friend", "online friend"],
+    "bio": "Met through online gaming and became real-life friends.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 9,
+    "name": "Sadia Noor",
+    "picture": "Sadia",
+    "email": "sadia.noor@gmail.com",
+    "days_since_contact": 22,
+    "status": "Almost Due",
+    "tags": ["university", "research partner"],
+    "bio": "We worked together on research projects during university.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 10,
+    "name": "Imran Khan",
+    "picture": "Imran",
+    "email": "imran.khan@gmail.com",
+    "days_since_contact": 40,
+    "status": "Overdue",
+    "tags": ["old friend", "school"],
+    "bio": "School friend from childhood, lost touch over time but still important.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  }
+]
