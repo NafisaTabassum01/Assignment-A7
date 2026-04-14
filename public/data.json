@@ -8,7 +8,7 @@
     "status": "On-Track",
     "tags": ["school friend", "best friend"],
     "bio": "We studied together in college and still talk almost every week.",
-    "goal": 14,
+    "goal": 12,
     "next_due_date": "2026-04-18"
   },
   {
@@ -20,7 +20,7 @@
     "status": "Almost Due",
     "tags": ["gym buddy", "college"],
     "bio": "Met at the gym, became close friends through fitness journey.",
-    "goal": 14,
+    "goal": 10,
     "next_due_date": "2026-04-20"
   },
   {
@@ -32,7 +32,7 @@
     "status": "Overdue",
     "tags": ["university", "project partner"],
     "bio": "We worked on several university projects together and stayed in touch.",
-    "goal": 14,
+    "goal": 19,
     "next_due_date": "2026-04-10"
   },
   {
@@ -44,7 +44,7 @@
     "status": "On-Track",
     "tags": ["childhood friend", "neighbour"],
     "bio": "Grew up in the same neighborhood and still meet during holidays.",
-    "goal": 14,
+    "goal": 16,
     "next_due_date": "2026-04-22"
   },
   {
@@ -68,7 +68,7 @@
     "status": "Overdue",
     "tags": ["Family"],
     "bio": "Worked in the same office team for 2 years, still keep in touch occasionally.",
-    "goal": 14,
+    "goal": 10,
     "next_due_date": "2026-04-05"
   },
   {
@@ -80,7 +80,7 @@
     "status": "On-Track",
     "tags": ["Friend", "school"],
     "bio": "My closest friend from school days, talk almost daily.",
-    "goal": 14,
+    "goal": 16,
     "next_due_date": "2026-04-25"
   },
   {
@@ -92,7 +92,7 @@
     "status": "On-Track",
     "tags": ["gaming friend", "online friend"],
     "bio": "Met through online gaming and became real-life friends.",
-    "goal": 14,
+    "goal": 15,
     "next_due_date": "2026-04-21"
   },
   {
@@ -104,7 +104,7 @@
     "status": "Almost Due",
     "tags": ["university", "research partner"],
     "bio": "We worked together on research projects during university.",
-    "goal": 14,
+    "goal": 13,
     "next_due_date": "2026-04-16"
   },
   {

@@ -36,7 +36,8 @@ const AllFriends = () => {
         <div className=' w-10/12 mx-auto'>
 
             <h2 className='font-semibold text-[24px]'>Your Friends</h2>
-<div className='md:grid grid-cols-4 gap-4 '>    {
+<div className='md:grid grid-cols-4 gap-4 '>   
+{
     friends.map(friend=>{
         return <div>
             <Link to={`/friendDetails/${friend.id}`} className='flex flex-col items-center gap-1.5 bg-white py-8 mb-3 rounded-xl shadow-lg shadow-gray-300'>
