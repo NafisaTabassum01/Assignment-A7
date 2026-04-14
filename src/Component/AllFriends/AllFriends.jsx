@@ -9,6 +9,7 @@ import Rakib from "../../assets/Rakib.png";
 import Sadia from "../../assets/Sadia.png";
 import Shakil from "../../assets/Shakil.png";
 import Tanvir from "../../assets/Tanvir.png";
+import { Link } from 'react-router';
 
 
 const images = {
@@ -38,7 +39,7 @@ const AllFriends = () => {
 <div className='md:grid grid-cols-4 gap-4 '>    {
     friends.map(friend=>{
         return <div>
-                            <div className='flex flex-col items-center gap-1.5 bg-white py-8 mb-3 rounded-xl shadow-lg shadow-gray-300'>
+            <Link to={`/friendDetails/${friend.id}`} className='flex flex-col items-center gap-1.5 bg-white py-8 mb-3 rounded-xl shadow-lg shadow-gray-300'>
              <img src={images[friend.picture]} alt="" />
               <p className='font-semibold text-[20px]'>{friend.name}</p>
               <p className='text-[12px] text-gray-400'>{friend.days_since_contact}d ago</p>
@@ -49,7 +50,7 @@ const AllFriends = () => {
                              friend.status === "On-Track"?"bg-[#244D3F] text-white": friend.status === "Almost Due"? "bg-[#EFAD44] text-white": "bg-[#EF4444] text-white"}`}>{friend.status}</div>
 
 
-                </div>
+                </Link>
             
         </div>
     })}

@@ -10,6 +10,7 @@ import RootLayout from './Layout/RootLayout';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import Banner from './Component/Banner/Banner';
 import HomePage from './Pages/HomePage/HomePage';
+import FriendDetails from './Pages/FriendDetails/FriendDetails';
 
 
 
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
       {
         index:true,
         element: <HomePage></HomePage>
+      },
+      {
+        path:"/friendDetails/:FriendId",
+        element: <FriendDetails></FriendDetails>,
+        loader: ()=> fetch("data.json")
       }
     ],
     errorElement: <ErrorPage></ErrorPage>

@@ -1,5 +1,6 @@
 import React from 'react';
 import navlogo from "../../assets/logo.png";
+import { Link } from 'react-router';
 
 
 
@@ -12,7 +13,7 @@ const Navbar = () => {
                 <img src={navlogo} alt="" />
                 </div>
             <div className='flex justify-center gap-2 md:justify-end mt-2'>
-                <button className='btn bg-[#244D3F] text-white'><i className="fa-regular fa-house"></i>Home</button>
+                <Link to="/"><button className='btn bg-[#244D3F] text-white'><i className="fa-regular fa-house"></i>Home</button></Link>
                 <button className='btn border-none bg-white shadow-none'><i className="fa-regular fa-clock"></i>Timeline</button>
                 <button className='btn border-none bg-white shadow-none'><i className="fa-solid fa-chart-line"></i>Stats</button>
             </div>
