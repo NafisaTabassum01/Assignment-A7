@@ -82,8 +82,8 @@ const handleAddToTimeline = (type) => {
     
 <img src={images[picture]} alt={name} />
     <p className='font-semibold text-[20px]'>{name}</p>
-    <div class="badge badge-error">{status}</div>
-<div className="flex gap-2 flex-wrap mt-2">
+<div className={`badge rounded-2xl py-3 ${
+                            status === "On-Track"?"bg-[#244D3F] text-white":status === "Almost Due"? "bg-[#EFAD44] text-white": "bg-[#EF4444] text-white"}`}>{status}</div><div className="flex gap-2 flex-wrap mt-2">
   {tags.map((tag, index) => (
     <div key={index} className="badge badge-soft border border-green-500 badge-success mb-2">{tag}</div>))}</div>
     

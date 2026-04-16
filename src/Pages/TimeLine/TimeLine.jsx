@@ -1,8 +1,15 @@
 import React, { useContext } from 'react';
 import { TimelineFriendContext } from '../../Context/TimeLineContext';
-import Call from '../../assets/call.png'
+import Call from '../../assets/Call.png'
 import Text from '../../assets/Text.png'
 import Video from '../../assets/Video.png'
+
+
+const iconMap = {
+    Call,
+    Video,
+    Text
+};
 
 const TimeLine = () => {
 
@@ -20,10 +27,10 @@ const TimeLine = () => {
 
                         <div key={item.id} className="bg-white shadow rounded flex gap-10 mb-4 p-5">
                             
-                            <div><img src={item.type} alt="" /></div>
+                            <div><div><img src={iconMap[item.type]} alt=""/></div></div>
                             
                             <div>
-                            <div className='flex'><p><span className='text-[20px] font-medium'>{item.type} </span><span className='text-[18px] text-[#64748B]'>with</span><span> {item.name}</span></p></div>
+                            <div className='flex'><p><span className='text-[20px] font-medium'>{item.type} </span><span className='text-[18px] text-[#64748B]'>with</span><span className='text-[18px] text-[#64748B]'> {item.name}</span></p></div>
                             <p>Date: {item.date}</p></div>
                         </div>
                     ))
