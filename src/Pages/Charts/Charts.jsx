@@ -21,12 +21,13 @@ const data = [
 
     return (
 <div className='w-10/12 mx-auto '>
+
     <p className='text-[48px] font-bold mt-14'>Friendship Analytics</p>
     
     <div className='bg-white my-10 rounded-lg shadow shadow-gray-300 pb-5'>
         
-            <PieChart width={400} height={400} className='mx-auto'>
-                
+<div>
+        <PieChart width={300} height={300} className='mx-auto'>                
                 <Pie
                     data={data}
                     dataKey="value"
@@ -40,6 +41,7 @@ const data = [
                 <Tooltip></Tooltip>
             </PieChart>
 
+</div>
         </div></div>        
         
     );

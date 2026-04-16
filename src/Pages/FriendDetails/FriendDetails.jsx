@@ -67,11 +67,15 @@ toast.success(`${type} added to timeline!`);
 };
 
     const newItem = {
-        id: Date.now(),
-        name,
-        type,
-        date: today,
-    };
+    id: Math.random().toString(36).substring(2),
+    name,
+    type,
+    date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+    }),
+};
 
     setFriends(prev => [newItem, ...prev]);
     notify(type);

@@ -31,7 +31,7 @@ const TimeLine = () => {
                             
                             <div>
                             <div className='flex'><p><span className='text-[20px] font-medium'>{item.type} </span><span className='text-[18px] text-[#64748B]'>with</span><span className='text-[18px] text-[#64748B]'> {item.name}</span></p></div>
-                            <p>Date: {item.date}</p></div>
+                            <p className='text-[16px] text-[#728093]'> {item.date}</p></div>
                         </div>
                     ))
                 )
