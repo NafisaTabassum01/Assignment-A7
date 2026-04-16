@@ -1,16 +1,26 @@
-# React + Vite
+Name of the project- BondTrack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description-
 
-Currently, two official plugins are available:
+BondTrack is a simple and interactive web application that helps users manage and track their interactions with friends. Users can log activities like calls, texts, and video chats, and visualize their interaction patterns through analytics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Technologies Used-
 
-## React Compiler
+1.React.js
+2.Vite
+3.React Router
+4.Context API
+5.Recharts
+6.Tailwind CSS
+7.React Toastify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Key Features-
 
-## Expanding the ESLint configuration
+1.Timeline Tracking
+Users can add and view interactions (Call, Text, Video) with friends in a timeline format.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2.Analytics Dashboard
+Dynamic pie chart showing the count of different interaction types (Call, Text, Video).
+
+3.Real-time Notifications
+Toast notifications appear instantly when a new interaction is added.
