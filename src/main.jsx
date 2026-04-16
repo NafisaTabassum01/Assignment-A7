@@ -11,6 +11,8 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import Banner from './Component/Banner/Banner';
 import HomePage from './Pages/HomePage/HomePage';
 import FriendDetails from './Pages/FriendDetails/FriendDetails';
+import TimeLine from './Pages/TimeLine/TimeLine';
+import TimeLineContext from './Context/TimeLineContext';
 
 
 
@@ -26,7 +28,11 @@ const router = createBrowserRouter([
       {
         path:"/friendDetails/:FriendId",
         element: <FriendDetails></FriendDetails>,
-        loader: ()=> fetch("data.json")
+        loader: ()=> fetch("/data.json")
+      },
+      {
+        path:"/timeLine",
+        element: <TimeLine></TimeLine>
       }
     ],
     errorElement: <ErrorPage></ErrorPage>
@@ -37,8 +43,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-      <RouterProvider router={router} />,
+    {/* <App /> */} <TimeLineContext>
+      <RouterProvider router={router} />
+      </TimeLineContext>
 
   </StrictMode>,
 )

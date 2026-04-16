@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 
 import Ayesha from "../../assets/Ayesha.png";
@@ -12,6 +12,9 @@ import Sadia from "../../assets/Sadia.png";
 import Shakil from "../../assets/Shakil.png";
 import Tanvir from "../../assets/Tanvir.png";
 import { Link } from 'react-router';
+
+import { useContext } from 'react';
+import { TimelineFriendContext } from '../../Context/TimeLineContext';
 
 
 const images = {
@@ -35,10 +38,10 @@ const FriendDetails = () => {
     const {FriendId} = useParams();
     console.log(FriendId);
     
-const friends = useLoaderData();
-console.log(friends)
+const friendsData = useLoaderData();
+console.log(friendsData)
 
-const expectedFriends = friends.find(friend=>friend.id == FriendId)
+const expectedFriends = friendsData.find(friend=>friend.id == FriendId)
 console.log(expectedFriends);
 
 const {
@@ -54,10 +57,25 @@ const {
 
 } = expectedFriends
 
+const { friends, setFriends } = useContext(TimelineFriendContext);
+const handleAddToTimeline = (type) => {
+    const newItem = {
+        id: Date.now(),
+        name,
+        type,
+        date: today,
+    };
+
+    setFriends(prev => [newItem, ...prev]);
+};
+
+
+
+
 
     return <div className='w-9/12 mx-auto pt-14'>
 
-<div className="grid-cols-2 md:grid grid-cols-6 gap-4 mb-16">
+<div className="grid-cols-2 md:grid grid-cols-6 gap-4 mb-12">
 
   <div className="col-span-2">   
 <div className='bg-white shadow shadow-gray-300 flex flex-col items-center text-center rounded-lg py-8'>
@@ -104,15 +122,23 @@ const {
     <div className='bg-white mt-3 w-full rounded-sm shadow shadow-gray-300 p-4'>
         <p className='text-[#244D3F] text-[20px] pb-2 font-medium'>Quick Check-In</p>
         <div className='grid grid-cols-3 gap-3 mx-auto text-center'>
-            <Link className='bg-[#F8FAFC] border border-gray-200 rounded-lg p-3'>
-                <i class="fa-solid fa-phone"></i> <p className='text-[18px]'>Call</p>
-            </Link>
-            <Link className='bg-[#F8FAFC] border border-gray-200 rounded-lg p-3'>
-                <i class="fa-regular fa-message"></i> <p className='text-[18px]'>Text</p>
-            </Link>
-            <Link className='bg-[#F8FAFC] border border-gray-200 rounded-lg p-3'>
-                <i class="fa-solid fa-video"></i> <p className='text-[18px]'>Video</p>
-            </Link>
+
+    
+    <button onClick={() => handleAddToTimeline("Call")} className='btn bg-[#F8FAFC] border border-gray-200 rounded-lg p-9'>
+    <i class="fa-solid fa-phone"></i> 
+    <p className='text-[18px]'>Call</p>
+    </button>
+
+    <button onClick={() => handleAddToTimeline("Text")} className='btn bg-[#F8FAFC] border border-gray-200 rounded-lg p-9'>
+    <i class="fa-regular fa-message"></i> 
+    <p className='text-[18px]'>Text</p>
+    </button>
+            
+            
+    <button onClick={() => handleAddToTimeline("Video")} className='btn bg-[#F8FAFC] border border-gray-200 rounded-lg p-9'>
+    <i class="fa-solid fa-video"></i> 
+    <p className='text-[18px]'>Video</p>
+    </button>
         </div>
     </div>
     <div className='bg-white mt-3 w-full rounded-sm shadow shadow-gray-300 p-5'>
