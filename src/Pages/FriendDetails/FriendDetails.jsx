@@ -14,6 +14,8 @@ import Tanvir from "../../assets/Tanvir.png";
 import { Link } from 'react-router';
 
 import { useContext } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
 import { TimelineFriendContext } from '../../Context/TimeLineContext';
 
 
@@ -32,11 +34,11 @@ const images = {
 
 
 const FriendDetails = () => {
-      const today = new Date().toLocaleDateString();
 
+const today = new Date().toLocaleDateString();
     
-    const {FriendId} = useParams();
-    console.log(FriendId);
+const {FriendId} = useParams();
+console.log(FriendId);
     
 const friendsData = useLoaderData();
 console.log(friendsData)
@@ -59,6 +61,11 @@ const {
 
 const { friends, setFriends } = useContext(TimelineFriendContext);
 const handleAddToTimeline = (type) => {
+
+    const notify = (type) => {
+toast.success(`${type} added to timeline!`);
+};
+
     const newItem = {
         id: Date.now(),
         name,
@@ -67,8 +74,8 @@ const handleAddToTimeline = (type) => {
     };
 
     setFriends(prev => [newItem, ...prev]);
+    notify(type);
 };
-
 
 
 
@@ -189,6 +196,7 @@ const handleAddToTimeline = (type) => {
 
 
 </div>
+<ToastContainer position="top-right" autoClose={2000} />
     </div>
 };
 
