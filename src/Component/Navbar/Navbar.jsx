@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className='flex justify-center gap-2 md:justify-end mt-2'>
                 <Link to="/"><button className='btn bg-[#244D3F] text-white'><i className="fa-regular fa-house"></i>Home</button></Link>
                 <Link to="/timeLine" className='btn border-none bg-white shadow-none'><i className="fa-regular fa-clock"></i>Timeline</Link>
-                <button className='btn border-none bg-white shadow-none'><i className="fa-solid fa-chart-line"></i>Stats</button>
+                <Link to="/charts" className='btn border-none bg-white shadow-none'><i className="fa-solid fa-chart-line"></i>Stats</Link>
             </div>
         </div>
         </div>

@@ -21,7 +21,7 @@ const TimeLine = () => {
 
             {
                 friends.length === 0 ? (
-                    <p>No interactions yet</p>
+                    <p className='text-center font-medium mb-4'>No interactions yet</p>
                 ) : (
                     friends.map((item) => (
 

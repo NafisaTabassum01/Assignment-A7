@@ -13,6 +13,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import FriendDetails from './Pages/FriendDetails/FriendDetails';
 import TimeLine from './Pages/TimeLine/TimeLine';
 import TimeLineContext from './Context/TimeLineContext';
+import Charts from './Pages/Charts/Charts';
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"/timeLine",
         element: <TimeLine></TimeLine>
+      },
+      {
+        path:"/charts",
+        element: <Charts></Charts>
       }
     ],
     errorElement: <ErrorPage></ErrorPage>
