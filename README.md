@@ -1,35 +1,33 @@
-Name of the project- BondTrack
+# 🚀 BondTrack
 
-Description-
+## 📌 Description  
+BondTrack is a simple and interactive web application that helps users track and manage their interactions with friends. Users can log activities like calls, texts, and video chats, and visualize their interaction patterns through an analytics dashboard.
 
-BondTrack is a simple and interactive web application that helps users manage and track their interactions with friends. Users can log activities like calls, texts, and video chats, and visualize their interaction patterns through analytics.
+---
 
-Technologies Used-
+## ⚙️ Technologies Used  
+- React.js  
+- Vite  
+- React Router  
+- Context API  
+- Recharts  
+- Tailwind CSS  
+- React Toastify  
 
-1.React.js
+---
 
-2.Vite
+## ✨ Key Features  
 
-3.React Router
+### 🕒 Timeline Tracking  
+Users can add and view interactions such as Call, Text, and Video in a clean timeline format.
 
-4.Context API
+### 📊 Analytics Dashboard  
+A dynamic pie chart displays the distribution of interaction types for better visualization.
 
-5.Recharts
+### 🔔 Real-time Notifications  
+Instant toast notifications appear whenever a new interaction is added.
 
-6.Tailwind CSS
+---
 
-7.React Toastify
-
-Key Features-
-
-1.Timeline Tracking-
-
-Users can add and view interactions (Call, Text, Video) with friends in a timeline format.
-
-2.Analytics Dashboard-
-
-Dynamic pie chart showing the count of different interaction types (Call, Text, Video).
-
-3.Real-time Notifications-
-
-Toast notifications appear instantly when a new interaction is added.
+## 🧑‍💻 Created By  
+Made with ❤️ by Nafisa
